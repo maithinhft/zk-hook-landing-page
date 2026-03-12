@@ -1,16 +1,55 @@
-# React + Vite
+# ZK-Hook Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page for **ZK-Hook** — a privacy-preserving DeFi trading hook on Uniswap v4 using Zero-Knowledge Proofs, deployed on Unichain.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** + **Vite**
+- **Vanilla CSS** (dark-mode, glassmorphism)
+- **react-icons**
 
-## React Compiler
+## Sections
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Section | Description |
+|---------|-------------|
+| **Navbar** | Sticky glass header with logo, nav links, CTA button, mobile menu |
+| **Hero** | Headline, description, CTA buttons, animated gradient orbs, stats bar |
+| **Features** | 4 cards: Privacy, KYC Compliance, On-Chain Verification, Anti-Replay |
+| **How It Works** | 2 tabs (Whitelist Registration / Transaction Verification) with step-by-step timeline |
+| **Tech Stack** | 3 columns: ZK Circuits, Smart Contracts, Frontend & Client |
+| **Footer** | Documentation links, resources, community |
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+```
+
+The app will be available at **http://localhost:5173/**
+
+## Build for Production
+
+```bash
+npm run build
+npm run preview
+```
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Navbar.jsx / .css
+│   ├── Hero.jsx / .css
+│   ├── Features.jsx / .css
+│   ├── HowItWorks.jsx / .css
+│   ├── TechStack.jsx / .css
+│   └── Footer.jsx / .css
+├── App.jsx
+├── main.jsx
+└── index.css          # Design system & global styles
+```
