@@ -1,0 +1,126 @@
+.how-it-works {
+  background: var(--bg-secondary);
+}
+
+.how__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 56px;
+}
+
+.how__tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-normal);
+}
+
+.how__tab:hover {
+  border-color: var(--accent-indigo);
+  color: var(--text-primary);
+}
+
+.how__tab--active {
+  background: var(--gradient-primary);
+  border-color: transparent;
+  color: white;
+}
+
+.how__timeline {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.how__step {
+  display: flex;
+  gap: 24px;
+  opacity: 0;
+}
+
+.how__step-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.how__step-number {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: white;
+  flex-shrink: 0;
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+}
+
+.how__step-line {
+  width: 2px;
+  flex: 1;
+  background: linear-gradient(to bottom, var(--accent-indigo), transparent);
+  min-height: 32px;
+}
+
+.how__step-content {
+  padding: 24px;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.how__step-content:hover {
+  transform: translateY(0);
+}
+
+.how__step-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 50px;
+  background: rgba(6, 182, 212, 0.12);
+  color: var(--accent-cyan);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.how__step-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.how__step-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .how__tabs {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .how__step {
+    gap: 16px;
+  }
+}
